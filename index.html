@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simhastha Map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    #map {
+      height: 90vh;
+      width: 100%;
+    }
+    #menu {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: white;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+    /* 🔴 blinking crowd marker */
+   .blinking-crowd {
+  width: 40px;          /* increased size */
+  height: 40px;         /* increased size */
+  background: red;
+  border-radius: 50%;
+  animation: blink 1s infinite;
+  border: 3px solid white;
+  box-shadow: 0 0 15px rgba(255,0,0,0.7);
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+  </style>
+</head>
+<body>
+  <h2>Simhastha Map</h2>
+  
+  <div id="menu">
+    <label for="category">Find nearest:</label>
+    <select id="category">
+      <option value="">-- Select --</option>
+      <option value="temple">Temple</option>
+      <option value="shop">Shop</option>
+      <option value="toilet">Toilet</option>
+      <option value="hotel">Hotel</option>
+      <option value="police">Police Station</option>
+      <option value="medical_unit">Medical Unit</option>
+      <option value="drinking">Drinking Facility</option>
+      <option value="parking">Parking Area</option>
+    </select>
+    <button onclick="findNearest()">Go</button>
+  </div>
+
+  <div id="map"></div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

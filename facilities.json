@@ -1,0 +1,66 @@
+[
+  {
+    "_id": "1",
+    "name": "Mahakaleshwar Temple",
+    "type": "temple",
+    "location": { "type": "Point", "coordinates": [75.7885, 23.1765] }
+  },
+  {
+    "_id": "2",
+    "name": "Ram Ghat",
+    "type": "ghat",
+    "location": { "type": "Point", "coordinates": [75.7849, 23.1823] }
+  },
+  {
+    "_id": "3",
+    "name": "Kal Bhairav Temple",
+    "type": "temple",
+    "location": { "type": "Point", "coordinates": [75.7682, 23.2034] }
+  },
+  {
+    "_id": "4",
+    "name": "Ujjain Junction Railway Station",
+    "type": "station",
+    "location": { "type": "Point", "coordinates": [75.7926, 23.1821] }
+  },
+  {
+    "_id": "5",
+    "name": "Hotel Anjushree",
+    "type": "hotel",
+    "location": { "type": "Point", "coordinates": [75.8120, 23.1715] }
+  },
+  {
+    "_id": "6",
+    "name": "General Store - Ram Traders",
+    "type": "shop",
+    "location": { "type": "Point", "coordinates": [75.7860, 23.1810] }
+  },
+  {
+    "_id": "7",
+    "name": "Medical Unit - First Aid Camp",
+    "type": "medical_unit",
+    "location": { "type": "Point", "coordinates": [75.7830, 23.1860] }
+  },
+  {
+    "_id": "8",
+    "name": "Public Toilet - Sector A",
+    "type": "toilet",
+    "location": { "type": "Point", "coordinates": [75.7820, 23.1800] }
+  },
+  {
+    "_id": "9",
+    "name": "Drinking Water - Gate 1",
+    "type": "drinking",
+    "location": { "type": "Point", "coordinates": [75.7870, 23.1790] }
+  },
+  {
+    "_id": "10",
+    "name": "Parking - Sector C",
+    "type": "parking",
+    "location": { "type": "Point", "coordinates": [75.7900, 23.1820] }
+  }
+
+ 
+  
+  
+]
